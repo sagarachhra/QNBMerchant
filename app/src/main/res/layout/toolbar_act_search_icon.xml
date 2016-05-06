@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:param="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_bg"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <ImageView
+                android:src="@drawable/backforwardarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/imgvwBackArrow"/>
+
+
+
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Title"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                param:fontType="regular"
+                android:layout_toLeftOf="@+id/searchView"
+                android:layout_toRightOf="@+id/imgvwBackArrow"
+                android:layout_toEndOf="@+id/imgvwBackArrow" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/searchView"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/qnb_merchant_search_icon"
+
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>

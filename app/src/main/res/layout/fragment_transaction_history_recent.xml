@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_pink"
+    tools:context="timesofmoney.qnbmerchant.fragments.TransactionHistoryRecentFragment">
+
+    <!--<se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/listVIewRecentTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/list"></ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout_progress"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:id="@+id/txt1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msgWait"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

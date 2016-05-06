@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="loginCustomEdit">
+        <attr name="hint" format="string"/>
+        <attr name="iconNormal" format="integer"/>
+        <attr name="iconActive" format="integer"/>
+        <attr name="maxlength" format="integer"/>
+        <attr name="inputtype">
+            <enum name="number" value="1" />
+            <enum name="text" value="2" />
+            <enum name="password" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="regCustomEdit">
+        <attr name="hint1" format="string"/>
+        <attr name="maxlength1" format="integer"/>
+        <attr name="inputtype1">
+            <enum name="number" value="1" />
+            <enum name="text" value="2" />
+            <enum name="password" value="3" />
+        </attr>
+    </declare-styleable>
+
+// Float label
+    <declare-styleable name="FloatLabeledEditText">
+        <attr name="fletTextAppearance" format="reference" />
+        <attr name="fletPadding" format="reference|dimension" />
+        <attr name="fletPaddingLeft" format="reference|dimension" />
+        <attr name="fletPaddingTop" format="reference|dimension" />
+        <attr name="fletPaddingRight" format="reference|dimension" />
+        <attr name="fletPaddingBottom" format="reference|dimension" />
+        <attr name="fletBackground" format="reference|color" />
+        <attr name="hintTextColor" format="reference|color"/>
+        <attr name="hintTextGravity" format="reference|integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="customBtn">
+        <attr name="text" format="string"/>
+        <attr name="bg" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="customEdit">
+        <attr name="hint2" format="string" />
+        <attr name="maxlength2" format="integer" />
+        <attr name="inputtypeEdit">
+            <enum name="number" value="1" />
+            <enum name="text" value="2" />
+            <enum name="password" value="3" />
+        </attr>
+        <attr name="gravity">
+            <enum name="center" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+            <enum name="center_horizontal" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="fontType">
+            <enum name="regular" value="1" />
+            <enum name="light" value="2" />
+            <enum name="italic" value="3" />
+            <enum name="bold" value="4" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+</resources>

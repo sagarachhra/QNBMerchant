@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="timesofmoney.qnbmerchant.activities.RegistrationConfirmActivity">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:id="@+id/linlayRegistrationConfirmationContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/merchant"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ABCD Stores"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantNameValue"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_number"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1234567890"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantContactNumberValue"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="abcd@stores.com"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantEmailValue"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_branches"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="05"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantNumberOfBranchesValue"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/registration_number"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ABCD1234"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantRegistrationNumberValue"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/postal_code"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="123456"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantPostalCodeValue"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/national_id"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="AB123456CD"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantNationalIDValue"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_person"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hasan Ali"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantContactPersonValue"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_number"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9876543210"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantContactPersonMobileNumberValue"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="hasan.ali@stores.com"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantContactPersonEmailValue"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additional_notes"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Any additional notes"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/txtvwMerchantAdditionalNotesValue"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:id="@+id/btnConfirm"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corner_blue_bg_button"
+                android:textColor="@android:color/white"
+                android:ems="10"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linlayWelcomeTomVisaContainer"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/welcome_to_n_qnb_alhali_mvisa_app"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/qnb_alhali_will_contact_you_soon_n_through_the_entered_details"
+            android:id="@+id/textView8"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="For follow up, please contact 19700"
+            android:id="@+id/textView9"
+            android:layout_marginTop="10dp"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

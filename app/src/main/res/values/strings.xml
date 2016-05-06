@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">QNB Merchant</string>
+    <string name="username">Username</string>
+    <string name="mpin">MPIN</string>
+    <string name="agree_tandc"><![CDATA[I agree <u>Terms & Conditions</u>]]></string>
+    <!--<string name="login">Login</string>-->
+    <string name="login">دخول</string>
+    <string name="forgot_mpin">Forgot MPIN?</string>
+    <string name="do_not_have_qnb_merchant_card">Do not have QNB ALAHLI Card?</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_merchant">Welcome Merchant</string>
+    <string name="provide_your_details"><![CDATA[Provide your details & we will get in touch with you.]]></string>
+    <string name="business_info">Business Info</string>
+    <string name="continue_text">Continue</string>
+    <string name="contact_person_info">Contact Person Info</string>
+    <string name="number_of_branches">Number of branches</string>
+    <string name="name">Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="email">Email</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="national_id">National ID</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="submit">Submit</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="additional_notes">Additional Notes</string>
+    <string name="menu_transaction_history">Transaction History</string>
+    <string name="menu_qr_codes">QR Codes</string>
+    <string name="menu_sub_merchants">Sub Merchants</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <string name="about_mvisa">About mVisa</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="generate_new_mpin">Generate new MPIN</string>
+    <string name="citizen_id">Citizen ID</string>
+    <string name="forgot_mpin_title">Forgot MPIN</string>
+    <string name="thanks_generate_mpin_text">Thanks for providing the details. We will send you SMS with the new MPIN to your registered mobile.</string>
+    <string name="profile">Profile</string>
+    <string name="sub_merchant">Sub Merchant</string>
+    <string name="change_mpin">Change MPIN</string>
+    <string name="change_language">Change Language</string>
+    <string name="settings">Settings</string>
+    <string name="view_all_transactions">View all transactions</string>
+    <string name="todays_transactions">Today\'s Transactions</string>
+    <string name="recent">Recent</string>
+    <string name="statement">Statement</string>
+    <string name="generate">Generate</string>
+    <string name="my_qr_code">My QR Code</string>
+    <string name="amount">Amount</string>
+    <string name="proceed">Proceed</string>
+    <string name="confirm">Confirm</string>
+    <string name="pick_up_the_dates_to_view_trasnsaction">Pick up the dates to view transactions</string>
+    <string name="fifteen_days">15\ndays</string>
+    <string name="one_month">1\nmonth</string>
+    <string name="three_months">3\nmonths</string>
+    <string name="six_months">6\nmonths</string>
+    <string name="or_select_the_desired_dates_below">Or select the desired dates below</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="transaction_statement">Transaction Statement</string>
+    <string name="date_and_time"><![CDATA[Date & Time]]></string>
+    <string name="refund">Refund</string>
+    <string name="refund_amount">Refund Amount</string>
+    <string name="initiate_refund">Initiate Refund</string>
+    <string name="confirm_refund">Confirm Refund</string>
+    <string name="payment_reversal">Payment Reversal</string>
+    <string name="successful">Successful</string>
+    <string name="clear">Clear All</string>
+    <string name="amount_avaliable">Amount available</string>
+
+    <string name="errFromdate">Please select From date</string>
+    <string name="errTodate">Please select To date</string>
+    <string name="errdate">From date should not be greator than To date</string>
+
+
+    //Success Page
+
+    <string name="visa_card">Visa Card</string>
+    <string name="transaction_id">Transaction ID</string>
+    <string name="date_time">Date Time</string>
+
+    <!-- Error Messages -->
+    <string name="errorNetwork">Please check your internet connection.</string>
+    <string name="errorUsername">Please enter valid username.</string>
+    <string name="errorMobileNumber">Please enter mobile number.</string>
+    <string name="errorMobileNumberTenDigit">Please enter valid mobile number.</string>
+    <string name="errorCitizenID">Please enter valid citizen ID.</string>
+    <string name="errorMpin">Please enter 4 digit MPIN</string>
+
+    <string name="errorAPI">Something went wrong</string>
+    <string name="errorPAN">Please enter valid card number</string>
+    <string name="errorATM">Please enter ATM PIN</string>
+    <string name="errorTerms">Please accept terms and conditions</string>
+    <string name="msgWait">Please wait..</string>
+    <string name="erroroldmpin">Please enter old MPIN</string>
+    <string name="errornewmpin">Please enter new MPIN</string>
+    <string name="errorconfirmmpin">Please confirm new MPIN</string>
+    <string name="errormpinnotconfirm">Confirmed MPIN does not match</string>
+    <string name="dynamic_qr_code">Dynamic QR Code</string>
+    <string name="existing_mpin">Existing MPIN</string>
+    <string name="new_mpin">New MPIN</string>
+    <string name="confirm_new_mpin">Confirm New MPIN</string>
+    <string name="generate_n_qr_code">Generate \n QR Code</string>
+    <string name="generate_mpin">Generate MPIN</string>
+    <string name="confirm_with_pin">Confirm with PIN</string>
+    <string name="title">Title</string>
+    <string name="sub_title">Sub Title</string>
+    <string name="merchant">Merchant</string>
+    <string name="welcome_to_n_qnb_alhali_mvisa_app">Welcome to\n QNB ALHALI mVISA app</string>
+    <string name="qnb_alhali_will_contact_you_soon_n_through_the_entered_details">QNB ALHALI will contact you soon \n through the entered details.</string>
+    <string name="arabic">Arabic</string>
+    <string name="default_language_can_be_changed_from_settings_section_after_login">Default language can be changed from Settings section after login.</string>
+    <string name="egp">EGP</string>
+    <string name="defaultlanguage">Select the default language</string>
+
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_light_pink"
+    tools:context="timesofmoney.qnbmerchant.activities.GenerateQRCodeConfirmationActivity">
+
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar_generate_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linlayMPINContainer"
+        android:visibility="gone"
+        >
+
+
+    <TextView
+        android:id="@+id/txtvw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/confirm_with_pin"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <com.github.glomadrian.codeinputlib.CodeInput
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:underline_color="@android:color/white"
+
+        app:underline_selected_color="@android:color/black"
+        app:text_color="@android:color/black"
+        app:codes="4"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/generate"
+        android:id="@+id/btnGenerate"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_corner_blue_bg_button"
+        android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/linlayQRCodeContainer"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/imgvwQRCode"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

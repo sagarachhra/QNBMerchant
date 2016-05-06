@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/bg_light_pink"
+    android:orientation="vertical"
+    tools:context="timesofmoney.qnbmerchant.activities.ChangeMPINActivity">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <timesofmoney.qnbmerchant.customviews.CustomTextView
+        android:id="@+id/txtvwExistingMPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="@string/existing_mpin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="58dp"
+        android:paddingRight="58dp">
+
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtPin1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="number"/>
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtPin2"
+            android:layout_marginLeft="6dp"
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtPin3"
+            android:layout_marginLeft="6dp"
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtPin4"
+            android:layout_marginLeft="6dp"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+    </LinearLayout>
+
+
+    <timesofmoney.qnbmerchant.customviews.CustomTextView
+        android:id="@+id/txtvwNewMPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/new_mpin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="58dp"
+        android:paddingRight="58dp">
+
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtNewPin1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="number"/>
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtNewPin2"
+            android:layout_marginLeft="6dp"
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtNewPin3"
+            android:layout_marginLeft="6dp"
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtNewPin4"
+            android:layout_marginLeft="6dp"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+    </LinearLayout>
+
+    <timesofmoney.qnbmerchant.customviews.CustomTextView
+        android:id="@+id/txtvwConfirmNewMPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:text="@string/confirm_new_mpin"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="58dp"
+        android:paddingRight="58dp">
+
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtRePin1"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="number"/>
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtRePin2"
+            android:layout_marginLeft="6dp"
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtRePin3"
+            android:layout_marginLeft="6dp"
+
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+
+        <timesofmoney.qnbmerchant.customviews.CustomEditText
+            xmlns:param="http://schemas.android.com/apk/res/timesofmoney.qnbmerchant"
+            android:id="@+id/edtRePin4"
+            android:layout_marginLeft="6dp"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            param:hint2=""
+            param:gravity="center"
+            param:maxlength2="1"
+            param:inputtypeEdit="password"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChangeMPIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_corner_blue_bg_button"
+        android:ems="10"
+        android:text="@string/change_mpin"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

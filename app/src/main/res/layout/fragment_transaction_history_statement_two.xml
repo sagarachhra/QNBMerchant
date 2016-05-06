@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light_pink"
+    tools:context=".fragments.TransactionHistoryStatementTwoFragment">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/tab_bg">
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:id="@+id/txtDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transaction Statement for dates \nOctober 01' 2015 to October 15' 2016"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/imgvwEdit"
+            android:layout_toLeftOf="@+id/imgvwEdit"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            android:layout_toStartOf="@+id/imgvwEdit" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imgvwEdit"
+            android:scaleType="centerInside"
+            android:src="@drawable/qnb_merchant_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+    <!--<se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/listVIewRecentTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <ListView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:visibility="gone"></ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout_progress"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:id="@+id/txt1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/msgWait"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

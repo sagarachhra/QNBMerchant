@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light_pink"
+    tools:context="timesofmoney.qnbmerchant.activities.TransactionDetailsActivity">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/tool_transaction_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.50">
+
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/egp"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:id="@+id/textView11" />
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="1500.00"
+                android:textSize="30dp"
+                android:id="@+id/textView12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+           >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/refund"
+            android:id="@+id/btnRefund"
+            android:ems="8"
+
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_corner_blue_bg_button"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Amount available : EGP 10000.00"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="16dp"
+        android:background="@color/tab_bg"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtvwAmountAvailable" />
+
+    <include
+        android:id="@+id/transaction_details_list_item"
+        layout="@layout/transaction_details_list_item"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scaleType="fitXY"
+    tools:context="timesofmoney.qnbmerchant.activities.DashboardActivity">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/dashboard_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_marginTop="62dp"
+        android:orientation="vertical"
+        >
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/qnb_merchant_dashboard_bgimg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_weight="0.75"
+                android:background="@drawable/qnb_merchant_dashboard_shoper_name_bg"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Aaftab Fruits Shop"
+                    android:textSize="21dp"
+                    android:id="@+id/txtvwCompanyName"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/white" />
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtvwmVisaID"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="mVisa 1234 5678 90"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/qnb_merchant_dashboard_qr_bgimg">
+
+                <ImageView
+                    android:id="@+id/qrimage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/qnb_merchant_dashboard_qrcode"/>
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/qrimage"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/generate_n_qr_code"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@android:color/white" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/transactionLayout"
+        android:layout_below="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_light_pink">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#701246"
+            android:padding="5dp"
+            android:id="@+id/relativeLayout">
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/todays_transactions"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/white"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_marginRight="5dp"
+                android:src="@drawable/qnb_merchant_dashboard_refresh" />
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:id="@+id/recyclerViewTodaysTransactions"
+            android:layout_above="@+id/txtvwViewAllTransactions">
+
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/txtvwViewAllTransactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#3A4242"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/view_all_transactions"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

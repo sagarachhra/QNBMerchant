@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/refund_detail2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/tab_bg"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.50">
+
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Hazefa Masud"
+
+                    android:textSize="16dp"
+                    android:id="@+id/textView11" />
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="xxxx xxxx xxxx 1234"
+                    android:textSize="13dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/textView12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="EGP 15000.00"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/textV" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="8.5"
+                android:orientation="vertical">
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Amount available     EGP 10000.00"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+
+                    android:id="@+id/txtvwAmountAvailable" />
+
+
+
+                <timesofmoney.qnbmerchant.customviews.FloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    app:hintTextColor="@color/tab_bg"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/edtxtRefundAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/refund_amount"
+                        android:inputType="number" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#ffffff" />
+
+                </timesofmoney.qnbmerchant.customviews.FloatLabeledEditText>
+
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/initiate_refund"
+                    android:id="@+id/btnRefund"
+                    android:ems="10"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/rounded_corner_blue_bg_button"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/qnb_merchant_info_small"/>
+
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Refund History:\nEGP 3000.00 was done on 14 Oct 2015 at 13:10"
+                    android:id="@+id/textView4"
+                    android:textSize="14dp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

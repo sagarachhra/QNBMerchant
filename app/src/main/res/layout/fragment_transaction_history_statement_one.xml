@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light_pink"
+    tools:context="timesofmoney.qnbmerchant.fragments.TransactionHistoryStatementFragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <timesofmoney.qnbmerchant.customviews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="@string/pick_up_the_dates_to_view_trasnsaction" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/fifteendays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/fifteen_days"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/onemth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:clickable="false"
+                android:gravity="center"
+
+                android:text="@string/one_month"
+                android:textColor="@android:color/black"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/threemth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/three_months"
+                android:textColor="@android:color/black"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sixmth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/six_months"
+                android:textColor="@android:color/black"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <timesofmoney.qnbmerchant.customviews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:text="@string/or_select_the_desired_dates_below"
+        android:id="@+id/textView10" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fromto"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/rl_mth"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/img1"
+            android:orientation="vertical">
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:id="@+id/txtfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="bottom"
+                android:text="@string/from"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/onemth"
+                android:layout_marginTop="6dp"
+                android:background="@color/tab_bg" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/qnb_merchant_calander" />
+
+        <LinearLayout
+            android:id="@+id/layout_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/img1"
+            android:orientation="vertical">
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:id="@+id/txtTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:clickable="false"
+                android:gravity="bottom"
+                android:text="@string/to"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/onemth"
+                android:layout_marginTop="6dp"
+                android:background="@color/tab_bg" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/rounded_corner_blue_bg_button"
+        android:textColor="@android:color/white"
+        android:text="@string/proceed" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="timesofmoney.qnbmerchant.fragments.RegistrationDetailsSecondFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <timesofmoney.qnbmerchant.customviews.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/number_of_branches"
+            android:ems="10"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:id="@+id/edtxtMerchantNumberOfBranches" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff" />
+
+        </timesofmoney.qnbmerchant.customviews.FloatLabeledEditText>
+
+
+        <timesofmoney.qnbmerchant.customviews.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:background="@null"
+            android:hint="@string/registration_number"
+            android:layout_margin="5dp"
+            android:id="@+id/edtxtMerchantRegistrationNumber" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff" />
+
+        </timesofmoney.qnbmerchant.customviews.FloatLabeledEditText>
+
+        <timesofmoney.qnbmerchant.customviews.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:hint="@string/postal_code"
+            android:id="@+id/edtxtMerchantPostalCode" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff" />
+
+        </timesofmoney.qnbmerchant.customviews.FloatLabeledEditText>
+
+        <timesofmoney.qnbmerchant.customviews.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:hint="@string/national_id"
+            android:id="@+id/edtxtMerchantNationalID" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff" />
+        </timesofmoney.qnbmerchant.customviews.FloatLabeledEditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_text"
+            android:id="@+id/btnContinue"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_corner_blue_bg_button"
+            android:textColor="@android:color/white"
+            android:ems="10"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

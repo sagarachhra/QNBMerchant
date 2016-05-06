@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/tool"
+        android:background="@color/tab_bg"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:id="@+id/rl1"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingLeft="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recent"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/v1"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0px"
+            android:id="@+id/rl2"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingRight="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/txt2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/statement"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/v2"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

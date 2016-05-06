@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5F0A3A"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linlayAboutmVisa"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+            <LinearLayout
+                android:id="@+id/headingtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Aaftab Fruits Shop"
+                    android:textColor="#ffffff"
+                    android:textAppearance="@android:style/TextAppearance.Large" />
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linlayTransactionHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#161C28"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <timesofmoney.qnbmerchant.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/menu_transaction_history"
+                        android:textColor="#ffffff"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                       />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linlayQRCodes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="#2B222F"
+                    android:orientation="vertical">
+
+                    <timesofmoney.qnbmerchant.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/menu_qr_codes"
+                        android:textColor="#ffffff"
+                        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linlaySubMerchants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="#161C28"
+                    android:orientation="vertical">
+
+                    <timesofmoney.qnbmerchant.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:padding="10dp"
+                        android:text="@string/menu_sub_merchants"
+                        android:textColor="#ffffff"
+                        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linlayProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="#2B222F"
+                    android:orientation="vertical">
+
+                    <timesofmoney.qnbmerchant.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/menu_profile"
+
+                        android:textColor="#ffffff"
+                        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linlaySettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#161C28"
+                    android:padding="5dp"
+                    android:orientation="vertical">
+
+                    <timesofmoney.qnbmerchant.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/menu_settings"
+
+                        android:textColor="#ffffff"
+                        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linlayLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="#2B222F"
+                    android:orientation="vertical">
+
+                    <timesofmoney.qnbmerchant.customviews.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/menu_logout"
+
+                        android:textColor="#ffffff"
+                        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+
+                </LinearLayout>
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/about_mvisa"
+
+                    android:textColor="#ffffff"
+                    android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linlayAboutmVisa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:orientation="horizontal">
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/about_mvisa"
+
+                android:textColor="#ffffff"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+            <!--<timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" | "
+
+
+                android:textColor="#ffffff"
+                android:textAppearance="@android:style/TextAppearance.Medium" />-->
+
+            <!--<timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/contact_us"
+
+                android:textColor="#ffffff"
+                android:textAppearance="@android:style/TextAppearance.Medium" />-->
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

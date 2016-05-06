@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "316210529424",
+    "project_id": "qnbmerchant-b7526"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316210529424:android:518f1d80ff733475",
+        "android_client_info": {
+          "package_name": "timesofmoney.qnbmerchant"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXQr90sPvPCzQQcJGj74C845aKODRs-_4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

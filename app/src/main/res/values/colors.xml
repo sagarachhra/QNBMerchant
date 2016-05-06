@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg_light_pink">#D0BFAF</color>
+    <color name="bg_blue_button">#001435</color>
+
+    <color name="tab_bg">#701246</color>
+    <color name="pink_txt">#720040</color>
+    <color name="bgcolor">#c9bfb7</color>
+    <color name="calcelbg">#394040</color>
+    <color name="textcolor">#394040</color>
+
+
+
+</resources>

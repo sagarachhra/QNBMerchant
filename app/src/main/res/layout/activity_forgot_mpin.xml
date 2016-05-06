@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_light_pink"
+    android:orientation="vertical"
+    tools:context="timesofmoney.qnbmerchant.activities.ForgotMPINActivity">
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/linlayGenerateMPINContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/generate_new_mpin"
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+            />
+
+        <timesofmoney.qnbmerchant.customviews.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:paddingRight="8dp"
+           app:hintTextGravity="1" >
+
+            <EditText
+                android:id="@+id/edtxtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:ems="10"
+                android:maxLength="10"
+                android:hint="@string/mobile_number"
+                android:inputType="number"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff" />
+
+        </timesofmoney.qnbmerchant.customviews.FloatLabeledEditText>
+
+
+        <timesofmoney.qnbmerchant.customviews.FloatLabeledEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hintTextGravity="1"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/edtxtCitizenID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="@string/citizen_id"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#ffffff" />
+
+        </timesofmoney.qnbmerchant.customviews.FloatLabeledEditText>
+
+        <Button
+            android:id="@+id/btnGenerateMPIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner_blue_bg_button"
+            android:ems="10"
+            android:text="@string/generate_mpin"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+    <timesofmoney.qnbmerchant.customviews.CustomTextView
+        android:id="@+id/txtvwThanksMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/thanks_generate_mpin_text"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:visibility="gone" />
+
+
+</LinearLayout>

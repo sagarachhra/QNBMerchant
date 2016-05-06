@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:param="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/qnb_merchant_login_bg"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0px"
+                android:layout_weight="3">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:orientation="vertical">
+
+
+                <timesofmoney.qnbmerchant.customviews.LoginFloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+
+                    custom:hintTextColor="@android:color/white"
+                    >
+
+                    <EditText
+                        android:id="@+id/curr"
+                        android:tag="CURR"
+                        android:visibility="gone"
+                        android:enabled="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:background="@null"
+                        android:gravity="left"
+                        android:text="+20 - "
+                        android:inputType="number"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/edtxtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="start"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/mobnumview"
+                        android:background ="#cabfb7" />
+
+                </timesofmoney.qnbmerchant.customviews.LoginFloatLabeledEditText>
+
+
+                <timesofmoney.qnbmerchant.customviews.LoginFloatLabeledEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    custom:hintTextColor="@android:color/white"
+                    custom:hintTextGravity="2">
+
+                    <EditText
+                        android:id="@+id/edtxtMPIN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ellipsize="start"
+                        android:gravity="center_horizontal"
+                        android:hint="@string/mpin"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#cabfb7" />
+
+                </timesofmoney.qnbmerchant.customviews.LoginFloatLabeledEditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <!--<CheckBox
+                        android:id="@+id/checkBoxTermsAndConditions"
+                        style="@style/WhiteCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/custom_checkbox" />-->
+
+                    <ToggleButton
+                        android:textOn=""
+                        android:textOff=""
+                        android:id="@+id/ch1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:checked="true"
+                        android:background="@drawable/custom_check" />
+
+                    <!-- &lt;!&ndash;<TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:text="@string/agree_tandc"
+                         android:id="@+id/txtvwTermsAndConditions" />-->
+
+                    <timesofmoney.qnbmerchant.customviews.CustomTextView
+                        android:id="@+id/txtvwTermsAndConditions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/agree_tandc"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="11dp"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/rounded_corner_grey_bg_button"
+                    android:ems="10"
+                    android:text="@string/login"
+                    android:textColor="#9A004C"
+                    android:textSize="16sp" />
+
+                <timesofmoney.qnbmerchant.customviews.CustomTextView
+                    android:id="@+id/txtvwForgotMPIN"
+                    param:fontType="regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/forgot_mpin"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rellayBottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000f33">
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            param:fontType="regular"
+            android:layout_alignTop="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:text="@string/do_not_have_qnb_merchant_card"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/qnb_merchant_login_arrow" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

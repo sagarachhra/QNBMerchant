@@ -1,0 +1,10 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/qnb_consumer_loading_anim01" android:duration="120" />
+    <item android:drawable="@drawable/qnb_consumer_loading_anim02" android:duration="120" />
+    <item android:drawable="@drawable/qnb_consumer_loading_anim03" android:duration="120" />
+    <item android:drawable="@drawable/qnb_consumer_loading_anim04" android:duration="120" />
+    <item android:drawable="@drawable/qnb_consumer_loading_anim05" android:duration="120" />
+    <item android:drawable="@drawable/qnb_consumer_loading_anim06" android:duration="120" />
+    <item android:drawable="@drawable/qnb_consumer_loading_anim07" android:duration="120" />
+    <item android:drawable="@drawable/qnb_consumer_loading_anim08" android:duration="120" />
+</animation-list>

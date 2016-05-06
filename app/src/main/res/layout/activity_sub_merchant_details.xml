@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:param="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="timesofmoney.qnbmerchant.activities.SubMerchantDetailsActivity">
+
+
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <timesofmoney.qnbmerchant.customviews.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sultan Khan"
+        android:id="@+id/txtvwSubMerchantName"
+        android:gravity="center"
+        param:fontType="regular"
+        android:background="#610C41"
+        android:layout_weight="0.25"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:padding="10dp"
+        android:background="@color/bg_light_pink">
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/mobile_number"
+            android:layout_margin="5dp"
+            />
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1234567890"
+            android:autoLink="phone"
+            android:layout_margin="5dp"
+            android:id="@+id/txtvwSubMerchantMobileNumber" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/email"
+            android:layout_margin="5dp"
+            />
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="sultan.khan@gmail.com"
+            android:autoLink="email"
+            android:layout_margin="5dp"
+            android:id="@+id/txtvwSubMerchantEmailID" />
+    </LinearLayout>
+
+
+</LinearLayout>

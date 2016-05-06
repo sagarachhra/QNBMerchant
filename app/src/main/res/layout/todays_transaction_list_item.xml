@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:param="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:id="@+id/txtsection"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/statement_section"
+            android:gravity="center"
+            android:text="25 Dec 2016"
+            android:textColor="#ffffff"
+            android:textStyle="italic|bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:id="@+id/txtvwName"
+                android:layout_width="wrap_content"
+                param:fontType="regular"
+                android:layout_height="wrap_content"
+                android:text="Peter Jose"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <timesofmoney.qnbmerchant.customviews.CustomTextView
+                android:id="@+id/txtvwCArdNumber"
+                android:layout_width="wrap_content"
+                param:fontType="light"
+                android:layout_height="wrap_content"
+                android:text="xxxx xxxx xxxx 1234"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15">
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            param:fontType="light"
+            android:gravity="bottom|right"
+            android:padding="3dp"
+            android:text="EGP"
+
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30">
+
+        <timesofmoney.qnbmerchant.customviews.CustomTextView
+            android:id="@+id/txtvwTransactionAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center"
+            param:fontType="light"
+            android:padding="3dp"
+            android:text="500"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imgvwRefund"
+            android:src="@drawable/qnb_merchant_rev_arrow"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom"
+            android:visibility="invisible"
+
+             />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="#ffffff" />
+
+
+</LinearLayout>

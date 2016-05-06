@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="MPINLength">4</integer>
+    <integer name="TPINLength">4</integer>
+    <integer name="OTPLength">6</integer>
+    <integer name="mobileNoLength">10</integer>
+    <integer name="ccCode">20</integer>
+</resources>
